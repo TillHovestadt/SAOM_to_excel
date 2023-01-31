@@ -120,9 +120,12 @@ sienaBayesResults <- function(sienaBayesFitObject,
   )
 
   # attach p-values to dataframe
-  resultsdataframe <- merge(x = resultsdataframe,
-                            y = postprobs,
-                            by = "name")
+  for(effname in postprobs$name) {
+
+    resultsdataframe$p[resultsdataframe$name == effname] <- postprobs$p[postprobs$name == effname]
+
+  }
+
 
   if (writeToExcel == T) {
     if (is.null(writePath)) {
