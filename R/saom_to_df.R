@@ -29,9 +29,6 @@ sienaBayesResults <- function(sienaBayesFitObject,
       "RSienaTest",
       "multiSiena",
       "writexl",
-#      "knitr",
-#      "kableExtra",
-#      "magrittr",
       "coda"
     )
   )
