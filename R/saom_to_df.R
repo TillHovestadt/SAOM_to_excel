@@ -26,7 +26,7 @@ sienaBayesResults <- function(sienaBayesFitObject,
   pacman(
     name = c(
       "RSiena",
-      "RSienaTest",
+      #"RSienaTest",
       "multiSiena",
       "writexl",
       "coda"
