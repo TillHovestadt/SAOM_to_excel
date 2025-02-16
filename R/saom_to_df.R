@@ -35,7 +35,7 @@ sienaBayesResults <- function(sienaBayesFitObject,
 
 
   # save a data.frame with the results
-  tempresults <- RSienaTest::shortBayesResults(sienaBayesFitObject)
+  tempresults <- multiSiena::shortBayesResults(sienaBayesFitObject)
 
   # extract the mcmc chains of the results for p-values
   mcmcchainsarray <-
